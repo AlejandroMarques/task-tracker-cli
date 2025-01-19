@@ -15,7 +15,8 @@
   "type": "module",
   "main": "./index.js",
   "scripts": {
-    "configure": "npm install & npm link",
+    "configure": "npm install & npm link & npm run create-tasks-file",
+    "create-tasks-file": "node createJson.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
