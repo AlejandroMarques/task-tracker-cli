@@ -16,10 +16,13 @@
   "main": "./index.js",
   "scripts": {
     "configure": "npm install & npm link & npm run create-tasks-file",
-    "create-tasks-file": "node createJson.js",
+    "create-tasks-file": "node ./src/createJson.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "task-tracker": "./index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }

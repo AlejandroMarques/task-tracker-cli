@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { Task } from "./operations/Task.js";
+
+import { Task } from "./src/Task.js";
 
 const operations = {
   add: () => {

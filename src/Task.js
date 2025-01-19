@@ -1,16 +1,19 @@
-import fs from 'fs'
+import fs from 'fs'; 
+import './env.js';
+
 export class Task {
   arguments
   constructor(props){
     this.arguments = props
   }
 
-  readJSON(){
-    return JSON.parse(fs.readFileSync('./tasks.json'))
+  readJSON() {
+    const data = fs.readFileSync(process.env.TASKS_FILE_PATH, 'utf8');
+    return JSON.parse(data);
   }
 
   saveJSON(json) {
-    fs.writeFileSync('./tasks.json', JSON.stringify(json))
+    fs.writeFileSync(process.env.TASKS_FILE_PATH, JSON.stringify(json))
   }
 
   add() {
