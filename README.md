@@ -1,43 +1,43 @@
 # task-tracker-cli
-Herramienta CLI para poder llevar un tracking de tareas
+CLI tool for task tracking
 
-## ¿Cómo instalarlo?
+## Installation
 
-Clonar el repositorio de github en la carpeta donde lo quieras guardar
+1. Clone the GitHub repository to your desired directory:
 ```
 git clone https://github.com/AlejandroMarques/task-tracker-cli.git
 ```
 
-Entrar en la carpeta del proyecto `
+2. Navigate to the project directory:
 ```
 cd task-tracker-cli
 ```
 
-Ejecutar el comando de configuración del proyecto
+3. Run the project configuration command:
 ```
 npm run configure
 ```
 
-## ¿Cómo utilizarlo?
+## Usage
 ```
 # Adding a new task
-task-cli add "Buy groceries"
-# Output: Task added successfully (ID: 1)
+task-tracker add "Buy groceries"
+# Output: Task "Buy groceries" created
 
 # Updating and deleting tasks
-task-cli update 1 "Buy groceries and cook dinner"
-task-cli delete 1
+task-tracker update 1 "Buy groceries and cook dinner"
+task-tracker delete 1
 
 # Marking a task as in progress or done
-task-cli mark-in-progress 1
-task-cli mark-done 1
+task-tracker mark-in-progress 1
+task-tracker mark-done 1
 
 # Listing all tasks
-task-cli list
+task-tracker list
 
 # Listing tasks by status
-task-cli list done
-task-cli list todo
-task-cli list in-progress
+task-tracker list done
+task-tracker list todo
+task-tracker list in-progress
 
 ```
