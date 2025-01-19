@@ -31,6 +31,7 @@ export class Task {
     const tasks = this.readJSON()
     const task = this.read()
     task[field] = value
+    task.updatedAt = new Date()
     const updatedTask = tasks.map(t => {
       return t.id === task.id ? task : t
     })
