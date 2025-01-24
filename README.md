@@ -1,5 +1,5 @@
 # task-tracker-cli
-CLI tool for task tracking
+CLI tool for task tracking based on roadmap.sh [task-tracker](https://roadmap.sh/projects/task-tracker)
 
 ## Installation
 
